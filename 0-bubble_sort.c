@@ -1,4 +1,14 @@
 #include "sort.h"
+
+/*
+ *
+ * bubble_sort - function that has the sorting loop
+ * using bubble sort algorthim
+ * @array: the array
+ * @size: the size
+ * Return: the return of the function is void
+ *
+ */
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
