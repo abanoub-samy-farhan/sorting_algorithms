@@ -1,9 +1,8 @@
 #include "sort.h"
 
-/*
+/**
  * insertion_sort - function that sort according to the insertion
  * @list: the list to be sorted out
- * Return: void
  */
 void insertion_sort_list(listint_t **list)
 {
@@ -27,8 +26,8 @@ void insertion_sort_list(listint_t **list)
 	}
 }
 
-/*
- * is_not_ordered: the function of switching the values
+/**
+ * is_not_ordered - the function of switching the values
  * @list: the list of the numbers
  * @head: the head of the nodes
  * Return: 1 on sucess, 0 on failure
