@@ -1,11 +1,16 @@
 #include "sort.h"
 
+/*
+ * insertion_sort - function that sort according to the insertion
+ * @list: the list to be sorted out
+ * Return: void
+ */
 void insertion_sort_list(listint_t **list)
 {
 	int n;
 	listint_t *tmp, *list2 = *list;
 
-	while(list2 != NULL)
+	while (list2 != NULL)
 	{
 		n = 1;
 		while (n)
@@ -22,12 +27,19 @@ void insertion_sort_list(listint_t **list)
 	}
 }
 
+/*
+ * is_not_ordered: the function of switching the values
+ * @list: the list of the numbers
+ * @head: the head of the nodes
+ * Return: 1 on sucess, 0 on failure
+ */
 int is_not_ordered(listint_t *list, listint_t **head)
 {
 	listint_t *node1, *node2, *next1, *prev2;
+
 	if (list->prev == NULL)
 	{
-		return 0;
+		return (0);
 	}
 	if (list->n < list->prev->n)
 	{
